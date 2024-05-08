@@ -1,0 +1,3 @@
+D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/CMakeFiles/STM32F303_fw.elf.dir
+D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/CMakeFiles/rebuild_cache.dir

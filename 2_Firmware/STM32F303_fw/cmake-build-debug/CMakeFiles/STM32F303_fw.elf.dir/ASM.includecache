@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Startup/startup_stm32f303cctx.s
+

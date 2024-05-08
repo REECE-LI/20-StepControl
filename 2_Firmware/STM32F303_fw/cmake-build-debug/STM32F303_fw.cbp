@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="STM32F303_fw"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32F303_fw.elf">
+				<Option output="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/STM32F303_fw.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F303xC"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Device/ST/STM32F3xx/Include"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/Button"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/CAN"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Driver"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Memory"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Motor"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Oled"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 STM32F303_fw.elf"/>
+					<CompileFile command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="STM32F303_fw.elf/fast">
+				<Option output="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/STM32F303_fw.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F303xC"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Device/ST/STM32F3xx/Include"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/Button"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/CAN"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Driver"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Memory"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Motor"/>
+					<Add directory="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Oled"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="s:\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 STM32F303_fw.elf/fast"/>
+					<CompileFile command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/MinGW_STM32/bin/mingw32-make.exe -f &quot;D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc/can.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc/dac.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc/gpio.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc/main.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc/spi.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc/stm32f3xx_hal_conf.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc/stm32f3xx_it.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Inc/tim.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/can.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/dac.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/gpio.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/main.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/spi.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/stm32f3xx_hal_msp.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/stm32f3xx_it.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/syscalls.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/sysmem.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/system_stm32f3xx.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Src/tim.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Core/Startup/startup_stm32f303cctx.s">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Device/ST/STM32F3xx/LICENSE.txt">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/CMSIS/LICENSE.txt">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_can.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dac.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dac_ex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_exti.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_bus.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_cortex.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_dac.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_dma.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_exti.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_gpio.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_pwr.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_rcc.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_system.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_tim.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_utils.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/LICENSE.txt">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dac.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dac_ex.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi_ex.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/STM32F303CCTX_FLASH.ld">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/Button/button_base.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/Button/button_base.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/Button/button_stm32.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/Button/button_stm32.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/CAN/can_base.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Base/CAN/can_base.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Config/DapLink.cfg">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Config/Stlink.cfg">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Driver/driver_base.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Driver/sin_map.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Driver/tb67h450_base.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Driver/tb67h450_base.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Driver/tb67h450_stm32.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Driver/tb67h450_stm32.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder/encoder_base.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder/encoder_calibrator_base.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder/encoder_calibrator_base.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder/encoder_calibrator_stm32.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder/encoder_calibrator_stm32.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder/mt6816_base.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder/mt6816_base.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder/mt6816_stm32.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Encoder/mt6816_stm32.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Memory/stockpile_config.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Memory/stockpile_f303cc.c">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Memory/stockpile_f303cc.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Motor/motion_planner.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Motor/motion_planner.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Motor/motor.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/Motor/motor.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/Xdrive/configurations.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/selfmain.cpp">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/Users/selfmain.h">
+			<Option target="STM32F303_fw.elf"/>
+		</Unit>
+		<Unit filename="D:/SelfProject/1_XStep/2_Firmware/STM32F303_fw/STM32F303_fw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
